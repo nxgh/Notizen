@@ -17,7 +17,10 @@
    - mongo 数据库 log 日志文件的位置
    - mongo 的log 日志位置
 
-2. 进入 mongod 所在的目录`/usr/bin/mongod` ，运行 `sudo ./mongod --dbpath /var/lib/mongodb/ --logpath /var/log/mongodb/mongodb.log --logappend &`
+2. 进入 mongod 所在的目录`/usr/bin/mongod` ，运行 
+```bash
+sudo ./mongod --dbpath /var/lib/mongodb/ --logpath /var/log/mongodb/mongodb.log --logappend &
+```
 
    - **--dbpath：**指定mongo的数据库文件在哪个文件夹
    - **--logpath：**指定mongo的log日志是哪个，这里log一定要指定到具体的文件名
